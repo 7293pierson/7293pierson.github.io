@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"><html>
 <html>
 <head>
-<title>Chatting.....</title>
+<title>Clicking.....</title>
 <link rel = "icon" href =
 "https://i.ibb.co/1dJWdsG/cloud-icon-22.png"
         type = "image/x-icon">
@@ -22,14 +22,16 @@
     <li><button class="aboutus aboutus:hover" onclick="location.href='./aboutus.html'" type="button";">About us</button></li>
 
   </ul> </div> <br />
-<h1>Chat</h1>
+<h1>Clicker</h1>
   <br />
   <div class="welcome">
   <h2>
-    Welcome to PostPal! Let us introduce ourselves and explain our purpose.
+    Welcome to PostPal! Keep clicking the button below!
   </h2>
   </div>
-  <br /><br /><br />
+  <br /><br />
+    <button id="countup" onclick="displaycount()">Click</button>
+    <p id="carrier">Score: 0</p>
 
 
   <br />
@@ -43,6 +45,23 @@
   </footer>
 </body>
 
+<script>
+
+var count =(function () {
+
+  var counter = 0;
+  return function () {return counter +=1;}
+})();
+
+function displaycount(){
+
+document.getElementById("carrier").innerHTML = "Score: " + count();
+
+}
+
+  </script>
+
+
 </html>
 
 <style>
@@ -52,7 +71,8 @@ body{
   background-size:cover;
   background-image:url(https://c4.wallpaperflare.com/wallpaper/887/996/885/drawing-sky-clouds-wallpaper-preview.jpg);
 font-family: 'Heebo', sans-serif;
-overflow:hidden;
+overflow-x:hidden;
+overflow-y:auto;
 }
 h1 {
 font-family: Impact, sans-serif;
@@ -118,6 +138,14 @@ footer{
 
 
 }
+.click{
+
+  background:#00a1e1;
+    text-shadow: 3px 2px 6px black;
+      color:white;
+
+
+}
 .aboutus:hover{
 
   background:#00a1e1;
@@ -125,7 +153,7 @@ footer{
     color:white;
 }
 
-.chat{
+.chat:hover{
 
   background:#00a1e1;
     text-shadow: 3px 2px 6px black;
@@ -140,14 +168,6 @@ footer{
   margin:-10 -10 -10 -10;
   width:110%;
   height:50;
-}
-.click:hover{
-
-  background:#00a1e1;
-    text-shadow: 3px 2px 6px black;
-      color:white;
-
-
 }
 
 
@@ -172,6 +192,33 @@ width:100px;
 margin:-30 ;
 height: 100px;
   cursor:pointer;
+}
+
+#countup{
+border-radius:30px;
+border:solid;
+border-color:black;
+background-color:#e14000;
+color:black;
+font-family: Impact, sans-serif;
+font-size:30px;
+width:100%;
+height:10%
+display:flex
+position:fixed;
+margin:auto;
+}
+
+#carrier{
+color:white;
+border:solid;
+border-color:black;
+border-radius:30px;
+background-color:rgba(0,0,0,0.5);
+text-align:center;
+heigth:8%;
+
+
 }
 
 .contact:hover{
