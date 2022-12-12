@@ -27,22 +27,30 @@
   <br />
   <div class="welcome">
   <h2>
-    Welcome to PostPal! Let us introduce ourselves and explain our purpose.
+    Fill in the form below to contact us!
   </h2>
   </div>
   <br /><br /><br />
+  <div class="info">
   <form action="https://formsubmit.co/7293@pierson.nl" method="POST">
-       <input type="text" name="name" required>
-       <input type="email" name="email" required>
-       <button type="submit">Send</button>
+       <input type="text" name="name" placeholder="Name" required>
+       <input type="email" name="email" placeholder="Email Address" required><br />
+       <input type="text" name="subject" placeholder="Subject" required>
+       <input type="text" name="message" placeholder="Message" required>
+       <input type="hidden" name="_subject" value="New submission!">
+       <input type="hidden" name="_autoresponse" value="Thank you for contacting us, we will respond shortly!">
+       <input type="hidden" name="_template" value="table">
+       <input type="hidden" name="_next" value="./thanks.html">
+       <button class="send send:hover" type="submit">Send</button>
   </form>
+</div>
 
   <br />
   <br />
   <br />
   <br />
   <footer>
-    <p>
+    <p onclick="location.href='./thanks.html'" type="button";">
 
       Matthew Porkoros</p>
   </footer>
@@ -207,5 +215,54 @@ height: 100px;
   cursor:pointer;
 }
 
+input::placeholder {
+  color:#00a1e1;
+opacity:1;
+font-size:20px;
+
+}
+
+
+input{
+  font-family: Impact, sans-serif;
+    color:#00a1e1;
+    padding:15px;
+    border-radius:10px;
+    border:solid;
+    border-color:black;
+    margin:2%;
+    font-size:20px;
+
+}
+
+.info{
+background-color:rgba(0,0,0,0.8);
+border-radius:20px;
+border:solid;
+border-color:black;
+width:75%;
+margin:0 0 0 12%
+
+}
+
+[name="name"],[name="subject"]{
+margin:2% 2% 2% 20%;
+
+}
+
+.send{
+border-radius:20px;
+border:solid;
+border-color:black;
+background-color:#e14000;
+color:black;
+  font-family: Impact, sans-serif;
+
+}
+
+.send:hover{
+color:white;
+
+}
 
 </style>
