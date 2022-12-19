@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"><html>
 <html>
 <head>
-<title>About us</title>
+<title>Listening to music.....</title>
 <link rel="stylesheet" href="./style.css">
 <link rel = "icon" href =
 "https://i.ibb.co/1dJWdsG/cloud-icon-22.png"
@@ -15,33 +15,43 @@
   <ul style="list-style-type:none">
     <li>   <p>
 
-<img class="logo" src="https://i.ibb.co/1dJWdsG/cloud-icon-22.png" onclick="location.href='./index.html'" type="button";"></p></li>
+      <img class="logo" src="https://i.ibb.co/1dJWdsG/cloud-icon-22.png" onclick="location.href='./index.html'" type="button";"></p></li>
     <li> <button class="home home:hover" onclick="location.href='./index.html'" type="button";">Home</button></li>
-    <li><button class="musicplayer musicplayer:hover" onclick="location.href='./music.html'" type="button";">Music</button></li>
-        <li><button class="click click:hover" onclick="location.href='./click.html'" type="button";">Clicker</button></li>
-                     <li><button class="comingsoon comingsoon:hover" onclick="location.href='./comingsoon.html'" type="button";">COMING SOON!</button></li>
-                        <li><button class="onpage" onclick="location.href='./aboutus.html'" type="button";">About us</button></li>
+    <li><button class="onpage" onclick="location.href='./music.html'" type="button";">Music</button></li>
+    <li><button class="click click:hover" onclick="location.href='./click.html'" type="button";">Clicker</button></li>
+                    <li><button class="comingsoon comingsoon:hover" onclick="location.href='./comingsoon.html'" type="button";">COMING SOON!</button></li>
+    <li><button class="aboutus aboutus:hover" onclick="location.href='./aboutus.html'" type="button";">About us</button></li>
     <li><button class="contact contact:hover" onclick="location.href='./contact.html'" type="button";">Contact</button></li>
 
   </ul> </div> <br />
-<h1>About us</h1>
+<h1>Music Player</h1>
   <br />
   <div class="welcome">
   <h2>
-    Let us introduce ourselves and explain our purpose!
+    You can listen to music here!
   </h2>
   </div>
   <br /><br /><br />
-<div class="page">
-We are PostPal, <br />
-Your way into the internet..... <br /> <br />
-The purpose of PostPal is for you to be able to chill and just relax <br />
-And appreciate the highly-interactive website <br /> <br />
-The main reason Postpal was made was because of a school project <br />
-But it can become much more than that.....
-<br />
 
-<img class="pierson" src="https://www.brite.nl/wp-content/uploads/2018/10/ds-pierson-ref_logo-io.png"></img>
+<div id="musicplayer">
+
+<div class="songs">
+<p class="namemusic">Shape of you<br />-Ed Sheeran</p>
+<audio controls autoplay loop>
+<source src="music/Shapeofyou.mp3">
+  This browser does not support HTML5 audio!
+</audio></div>
+
+<div class="songs">
+<p class="namemusic">Mockingbird<br />-Eminem</p>
+<audio controls autoplay loop>
+<source src="music/Mockingbird.mp3">
+  This browser does not support HTML5 audio!
+</audio></div>
+
+
+<button id="moresoon">MORE COMING SOON!</button>
+
 </div>
 
   <br />
